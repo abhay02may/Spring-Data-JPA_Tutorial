@@ -71,7 +71,7 @@ class CourseRepositoryTest {
         System.out.println("totalPages: "+totalPages);
     }
 
-   /* @Test
+    @Test
     public void saveCourseWithStudentAndTeacher() {
 
         Teacher teacher = Teacher.builder()
@@ -95,7 +95,7 @@ class CourseRepositoryTest {
         course.addStudents(student);
 
         courseRepository.save(course);
-    }*/
+    }
 
 
 
