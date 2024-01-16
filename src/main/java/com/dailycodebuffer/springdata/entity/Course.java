@@ -43,7 +43,7 @@ public class Course {
     private Teacher teacher;
 
 
-    /*@ManyToMany(
+    @ManyToMany(
             cascade = CascadeType.ALL,
             fetch = FetchType.LAZY
     )
@@ -51,11 +51,10 @@ public class Course {
             name = "student_course_map",
             joinColumns = @JoinColumn(
                     name = "course_id",
-                    referencedColumnName = "courseId" , insertable = false, updatable = false
+                    referencedColumnName = "courseId" 
             ),
             inverseJoinColumns = @JoinColumn(
-                    name = "student_id",
-                    referencedColumnName = "studentId", insertable = false, updatable = false
+                    name = "student_id"                    
             )
     )
     List<Student> students;
@@ -66,5 +65,5 @@ public class Course {
         }
 
         students.add(student);
-    }*/
+    }
 }
